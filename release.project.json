@@ -1,6 +1,6 @@
 {
-	"name": "ModuleName",
-	"servePlaceIds": [],
+	"name": "EasySound",
+	"servePlaceIds": [14479320510],
 	"tree": {
 		"$className": "DataModel",
 		"ReplicatedStorage": {
@@ -10,7 +10,7 @@
 				"$path": "Packages",
 				"$className": "ModuleScript",
 				"$properties": {
-					"Source": "return require(script.lib)"
+					"Source": "local lib = require(script.lib)\n\nexport type EasySound = lib.EasySound\nexport type Group = lib.Group\nexport type Sound = lib.Sound\nexport type PlaybackConfig = lib.PlaybackConfig\n\nreturn lib"
 				},
 				"lib": {
 					"$path": "lib"
