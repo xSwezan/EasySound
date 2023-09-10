@@ -13,7 +13,7 @@ local EasySound = {
 	__groups = {};
 }
 
-function EasySound:GetGroup(Name: string): Types.GroupClass
+function EasySound.GetGroup(Name: string): Types.GroupClass
 	local OldGroup: Types.GroupClass? = EasySound.__groups[Name]
 	if (OldGroup) then
 		return OldGroup

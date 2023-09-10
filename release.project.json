@@ -10,7 +10,7 @@
 				"$path": "Packages",
 				"$className": "ModuleScript",
 				"$properties": {
-					"Source": "local lib = require(script.lib)\n\nexport type EasySound = lib.EasySound\nexport type Group = lib.Group\nexport type Sound = lib.Sound\nexport type PlaybackConfig = lib.PlaybackConfig\n\nreturn lib"
+					"Source": "return require(script.lib)--[[local lib = require(script.lib)\n\nexport type EasySound = lib.EasySound\nexport type Group = lib.Group\nexport type Sound = lib.Sound\nexport type PlaybackConfig = lib.PlaybackConfig\n\nreturn lib]]"
 				},
 				"lib": {
 					"$path": "lib"

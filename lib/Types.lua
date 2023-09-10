@@ -3,7 +3,7 @@ local Types = {}
 export type EasySound = {
 	SoundDirectory: Instance;
 
-	GetGroup: (self: EasySound, Name: string) -> GroupClass;
+	GetGroup: (Name: string) -> GroupClass;
 }
 
 export type GroupClass = {

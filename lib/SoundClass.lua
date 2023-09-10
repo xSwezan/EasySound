@@ -46,6 +46,7 @@ end
 
 function SoundClass:Destroy()
 	self.__janitor:Destroy()
+	self = nil
 end
 
 return SoundClass
